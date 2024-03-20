@@ -167,10 +167,10 @@ export default function Footer() {
               © 2024 Copyrights by{" "}
               <a
                 className="italic underline"
-                href="https://berthutapea.vercel.app/"
+                href="https://github.com/Sundaran811"
                 target="_blank"
               >
-                Golden Years
+              Senior Sanctuary
               </a>
             </p>
           </div>

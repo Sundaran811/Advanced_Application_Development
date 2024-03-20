@@ -7,6 +7,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { Link } from 'react-router-dom';
 
 const Useradmin = () => {
   
@@ -112,10 +113,10 @@ const Useradmin = () => {
         <option value="Pending">Pending</option>
         <option value="Rejected">Rejected</option>
       </select>
-      <button  className='add1'> Add Service</button> 
-          <button  className='add'> Add user</button> 
+          <Link to={"/as"}><button  className='add'> Add user</button> </Link>
           <button  className='del'>Delete all users</button> 
         </div>
+        
 
         <div className="product-container">
           {data.map((user, index) => (
@@ -139,9 +140,9 @@ const Useradmin = () => {
               </button>
 
               <button style={{  marginTop: '-40px', marginLeft:'50%', marginBottom:'3%' }}>
-              <button className="ask-query-button">
+              <Link to = "/up"><button className="ask-query-button">
                 user edit
-              </button>
+              </button></Link>
             </button>
             </div>
           ))}

@@ -34,7 +34,7 @@ export default function Navbar() {
           {/* Icon */}
           <Link to="/"><strong><p
             style={{color:'#fff'}}
-          >Golden-Years</p>
+          >SENIOR SANCTUARY</p>
           </strong></Link>
 
           {/* Hamburger */}
@@ -66,11 +66,11 @@ export default function Navbar() {
           {/* Button */}
           <div className="hidden md:flex md:gap-4 lg:gap-[25px] items-center text-sm lg:text-base font-head font-medium">
             
-          {/* <Link to="/">
-              <button  style={{color:'#fff'}}>
-                User Profile
-              </button>
-            </Link> */}
+          <Link to="/up">
+             <strong> <p className="cursor-pointer"  style={{color:'#fff'}}>User Profile</p></strong>
+            </Link>
+   
+              
           </div>
         </div>
 

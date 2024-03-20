@@ -37,12 +37,12 @@ export default function Userdash() {
   ]
   return (
     <>
+      <Appoinment />
         <div className="user-card-container">
         {services.map((service, index) => (
           <UserCard key={index} heading={service.heading} para={service.para} />
         ))}
       </div>
-      <Appoinment />
     </>
   )
 }

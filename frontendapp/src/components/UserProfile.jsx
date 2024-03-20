@@ -68,7 +68,7 @@ export default function Signup() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', padding: '0 20px' }}>
       <div style={{ maxWidth: '400px', width: '100%', backgroundColor: '#fff', padding: '40px', borderRadius: '8px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
-        <h2 style={{ marginBottom: '20px', textAlign: 'center', fontSize: '1.5rem', fontWeight: 'bold', color: '#333' }}>Sign up to your account</h2>
+        <h2 style={{ marginBottom: '20px', textAlign: 'center', fontSize: '1.5rem', fontWeight: 'bold' }} className="text-primary-300"> User Profile</h2>
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div>
             <label htmlFor="username" style={{ fontSize: '0.875rem', fontWeight: '500', color: '#333' }}>Full name</label>
@@ -132,16 +132,11 @@ export default function Signup() {
               style={{ width: '100%', padding: '10px', borderRadius: '4px', color: '#fff', fontWeight: 'bold', cursor: 'pointer', border: 'none' }}
               className="bg-primary-300 relative"
             >
-              Sign up
+            Edit Profile
               </button>
           </div>
         </form>
-        <p style={{ marginTop: '20px', textAlign: 'center', fontSize: '0.875rem', color: '#666' }}>
-          Already a member?{' '}
-          <Link  to="/login" style={{ fontWeight: 'bold', cursor: 'pointer', border: 'none', background: 'none' }} className="text-primary-300 relative">
-            Sign in
-          </Link>
-        </p>
+       
       </div>
     </div>
   );

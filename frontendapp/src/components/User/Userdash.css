@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center; 
     margin-top: 5% ;
+    margin-bottom: 2%;
   }
   
   .user-card-container > div {

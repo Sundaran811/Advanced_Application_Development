@@ -21,17 +21,27 @@ function Sidebar() {
         <ul className='sidebar-list'>
 
         <li className='sidebar-list-item'>
-                    <BsFillGrid3X3GapFill className='icon'/> <Link to = "/" >Home</Link>
+                     <Link to = "/" ><strong>Home</strong></Link>
             </li>
+
             <li className='sidebar-list-item'>
-                    <BsGrid1X2Fill className='icon'/><Link to = "/admin"> Dashboard</Link>
+                    <Link to = "/admin"><strong> Dashboard</strong></Link>
+            </li>
+
+            <li className='sidebar-list-item'>
+                    <Link to = "/as"><strong> Services</strong></Link>
+            </li>
+
+            <li className='sidebar-list-item'>
+                    <Link to = "/booking"><strong> Booking</strong></Link>
             </li>
             
-            {/*<li className='sidebar-list-item'>
-                    <BsFillGrid3X3GapFill className='icon'/> Doctors
-            </li>*/}
             <li className='sidebar-list-item'>
-                    <BsFillGearFill className='icon'/> <Link to = "/login" >Log Out</Link>
+                    <Link to = "/en"><strong> Queries</strong></Link>
+            </li>
+            
+            <li className='sidebar-list-item'>
+                    <Link to = "/login" ><strong>Log Out</strong></Link>
             </li>
         </ul>
     </aside>

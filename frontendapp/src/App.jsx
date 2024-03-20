@@ -10,6 +10,9 @@ import Signup from "./components/Signup";
 import Booking from "./components/Booking";
 import Payment from "./components/Payment";
 import { Suspense, lazy } from "react";
+import UserProfile from "./components/UserProfile";
+import AddServices from "./components/Sidebar/AddService";
+import Features from "./components/Admin";
 export default function App() {
   const Login = lazy(() =>  import("./components/Login"));
   return (
@@ -25,8 +28,11 @@ export default function App() {
         </Suspense>
       } />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/up" element={<UserProfile />}/>
       <Route path="/booking" element={<Booking />} />
       <Route path="/payment" element={<Payment />} />
+      <Route path="/as" element={<AddServices />} />
+      <Route path="/en" element={<Features    />} />
       </Routes>
     <Footer />
     </>

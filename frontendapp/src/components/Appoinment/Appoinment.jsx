@@ -36,7 +36,7 @@ const Appoinment = () => {
                                     />
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Button variant="contained" color="primary" className="theme-btn btn-fill form-btn mt-5" style={{ width: '100%' }}>
+                                    <Button variant="contained" color="primary" className="theme-btn btn-fill form-btn mt-5">
                                      Submit
                                     </Button>
                                 </Grid>
