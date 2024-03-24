@@ -58,10 +58,6 @@ public class UserController {
         userService.deleteUser(id);
 
     }
-    @PutMapping("/edit")
-    public void stateTransfers(){
-        userService.deleteAll();
-    }
    
     
     
