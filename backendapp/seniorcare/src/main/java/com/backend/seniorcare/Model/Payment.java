@@ -10,15 +10,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Table(name = "payment")
 @Data
-@Table(name = "availableservices")
-@NoArgsConstructor
 @AllArgsConstructor
-public class Availableservices {
+@NoArgsConstructor
+public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
-    private int cost;
-    private String description;
+    private int userId;
+    private String status;
+    private int amount;
+    private String paymentDate;
+    private String modeOfPayment;
 }

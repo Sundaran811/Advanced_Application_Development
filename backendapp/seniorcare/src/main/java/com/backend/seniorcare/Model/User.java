@@ -12,22 +12,16 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "user_table")
 @Data
-@AllArgsConstructor //to manage all the fields that are been inputed
-@NoArgsConstructor // to manage the fields that are defined here.
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
-
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
     private String name;
     private String email;
+    private String phone;
     private String password;
     private String roles;
-
-
-
-
-    
 }

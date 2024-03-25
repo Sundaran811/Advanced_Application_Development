@@ -10,15 +10,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Table(name = "booking")
 @Data
-@Table(name = "availableservices")
-@NoArgsConstructor
 @AllArgsConstructor
-public class Availableservices {
+@NoArgsConstructor
+public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String name;
-    private int cost;
+    private int id; 
+    private int userId;
+    private String bookingDate;
     private String description;
+    private int bookingStatus; 
 }
