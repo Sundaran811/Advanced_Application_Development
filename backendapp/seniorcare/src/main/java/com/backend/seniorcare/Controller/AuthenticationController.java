@@ -23,10 +23,10 @@ public class AuthenticationController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
-    @GetMapping("/home")
-    public String Home() {
-        return "Initial Render Page.!";
-    }
+    // @GetMapping("/home")
+    // public String Home() {
+    //     return "Initial Render Page.!";
+    // }
 
     @PostMapping("/authenticate")
     public String authenticateAndGetToken(@RequestBody AuthRequest authRequest) {

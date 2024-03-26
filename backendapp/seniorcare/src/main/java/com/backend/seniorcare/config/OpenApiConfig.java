@@ -18,12 +18,12 @@ public class OpenApiConfig {
         public OpenAPI defineOpenApi() {
                 Server server = new Server();
                 server.setUrl("http://localhost:8080");
-                server.setDescription("App Development");
+                server.setDescription("Advance Application Development");
 
                 Info info = new Info()
-                                .title("CourseMania")
+                                .title("Golden Years")
                                 .version("0.1")
-                                .description("swagger configuration testing.");
+                                .description("Senior home care Services.");
 
                 // Define JWT security scheme
                 SecurityScheme securityScheme = new SecurityScheme()
